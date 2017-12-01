@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Polygon - Responsive Multipurpose Landing Page</title>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/prettyphoto.css">
+    <link rel="stylesheet" href="/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/js/vendors/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="/js/vendors/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/js/vendors/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="/js/vendors/slick/slick.css">
+    <link rel="stylesheet" href="/js/vendors/swipebox/css/swipebox.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Revslider CSS -->
+    <link rel='stylesheet' href="/js/revolution/css/settings.css" type="text/css">
+    <link rel='stylesheet' href="/js/revolution/css/layers.css" type="text/css">
+    <link rel='stylesheet' href="/js/revolution/css/navigation.css" type="text/css">
+    <link rel='stylesheet' href="/js/revolution/css/settings2.css" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="header01">
+
+<%= erb :"/bloques/mobil" %>
+
+    <div class="wrapper" id="wrapper">
+
+      <%= erb :"/bloques/header" %>
+      <%= yield %>
+      <%= erb :"/bloques/footer" %>
+    </div>
+
+  <a class="scrollup" title="Go to top"><i class="fa fa-angle-up"></i></a>
+</body>
+
+</html>

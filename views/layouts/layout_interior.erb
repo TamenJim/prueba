@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Actuarial Analytics</title>
+    <!-- web-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <!-- off-canvas -->
+    <link href="/css/mobile-menu.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <!-- owl carousel -->
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <!-- Style CSS -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/animate.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="main-wrapper">
+<!-- Page Preloader -->
+<div id="preloader">
+    <div id="status">
+        <div class="status-mes"></div>
+    </div>
+</div>
+
+<div class="uc-mobile-menu-pusher">
+<div class="content-wrapper">
+
+  <!-- =======================
+=====    Header   ======
+=========================-->
+  <%= erb :'/bloques/header' %>
+
+
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <h1>
+                <% if I18n.locale == :es %>
+                    <%= @titulo %>
+                <% else %>
+                    <%= @tituloEn %>
+                <% end %>
+              </h1>
+            </div>
+        
+        </div>
+        <!--.row-->
+    </div>
+    <!--.container-->
+</section>
+<!--.page-header-->
+
+<%= yield %>
+
+
+<!-- =======================
+=====    Header   ======
+=========================-->
+<%= erb :'/bloques/footer' %>
+
+</div>
+<!-- .content-wrapper -->
+</div>
+<!-- .offcanvas-pusher -->
+
+<div class="uc-mobile-menu uc-mobile-menu-effect">
+    <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
+            id="uc-mobile-menu-close-btn">&times;</button>
+    <div>
+        <div>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About <span><i class="fa fa-angle-down"></i></span></a>
+                    <ul>
+                        <li><a href="about.html">Overview</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="client-page.html">Partners</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="career-details.html">Career Details</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="services.html">Services <span><i class="fa fa-angle-down"></i></span></a>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services-details.html">Service Single</a></li>
+                        <li><a href="services-grid.html">Service Grid</a></li>
+                    </ul>
+                </li>
+                <li><a href="cases.html">Ceses</a></li>
+
+                <li><a href="blog.html">Blog <span><i class="fa fa-angle-down"></i></span></a>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html">Contact <span><i class="fa fa-angle-down"></i></span></a>
+                    <ul>
+                        <li><a href="contact.html">Contact Style 1</a></li>
+                        <li><a href="contact-two.html">Contact Style 2</a></li>
+                        <li><a href="contact-three.html">Contact Style 3</a></li>
+                        <li><a href="contact-four.html">Contact Style 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Elements<span><i class="fa fa-angle-down"></i></span></a>
+                    <ul>
+                        <li><a href="element-text-box.html">Text Box</a></li>
+                        <li><a href="element-typography.html">Typography</a></li>
+                        <li><a href="element-thumbnail.html">Image Thumbnail</a></li>
+                        <li><a href="element-icon-text.html">Icon Box</a></li>
+                        <li><a href="element-list-style.html">List Style</a></li>
+                        <li><a href="element-button.html">Button</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- .uc-mobile-menu -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+<!-- =======================
+=====     JS   ======
+=========================-->
+<%= erb :"/bloques/scripts" %>
+</body>
+</html>
